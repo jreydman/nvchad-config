@@ -1,0 +1,236 @@
+
+
+
+n  <Tab>       * <Lua 77: ~/.config/nvim/lua/core/mappings.lua:83>
+                 Goto next buffer
+	Last set from Lua
+n  <Esc>       * <Cmd> noh <CR>
+                 Clear highlights
+	Last set from Lua
+n  <Space>x    * <Lua 93: ~/.config/nvim/lua/core/mappings.lua:98>
+                 Close buffer
+	Last set from Lua
+n  <Space>/    * <Lua 79: ~/.config/nvim/lua/core/mappings.lua:112>
+                 Toggle comment
+	Last set from Lua
+v  <Space>/    * <Esc><Cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>
+                 Toggle comment
+	Last set from Lua
+n  <Space>e    * <Cmd> NvimTreeFocus <CR>
+                 Focus nvimtree
+	Last set from Lua
+n  <Space>v    * <Lua 133: ~/.config/nvim/lua/core/mappings.lua:354>
+                 New vertical term
+	Last set from Lua
+n  <Space>h    * <Lua 123: ~/.config/nvim/lua/core/mappings.lua:347>
+                 New horizontal term
+	Last set from Lua
+n  <Space>wK   * <Lua 68: ~/.config/nvim/lua/core/mappings.lua:367>
+                 Which-key all keymaps
+	Last set from Lua
+n  <Space>wk   * <Lua 69: ~/.config/nvim/lua/core/mappings.lua:373>
+                 Which-key query lookup
+	Last set from Lua
+n  <Space>fh   * <Cmd> Telescope help_tags <CR>
+                 Help page
+	Last set from Lua
+n  <Space>pt   * <Cmd> Telescope terms <CR>
+                 Pick hidden term
+	Last set from Lua
+n  <Space>fb   * <Cmd> Telescope buffers <CR>
+                 Find buffers
+	Last set from Lua
+n  <Space>gt   * <Cmd> Telescope git_status <CR>
+                 Git status
+	Last set from Lua
+n  <Space>fw   * <Cmd> Telescope live_grep <CR>
+                 Live grep
+	Last set from Lua
+n  <Space>cm   * <Cmd> Telescope git_commits <CR>
+                 Git commits
+	Last set from Lua
+n  <Space>fa   * <Cmd> Telescope find_files follow=true no_ignore=true hidden=true <CR>
+                 Find all
+	Last set from Lua
+n  <Space>fz   * <Cmd> Telescope current_buffer_fuzzy_find <CR>
+                 Find in current buffer
+	Last set from Lua
+n  <Space>ma   * <Cmd> Telescope marks <CR>
+                 telescope bookmarks
+	Last set from Lua
+n  <Space>ff   * <Cmd> Telescope find_files <CR>
+                 Find files
+	Last set from Lua
+n  <Space>fo   * <Cmd> Telescope oldfiles <CR>
+                 Find oldfiles
+	Last set from Lua
+n  <Space>th   * <Cmd> Telescope themes <CR>
+                 Nvchad themes
+	Last set from Lua
+n  <Space>rn   * <Cmd> set rnu! <CR>
+                 Toggle relative number
+	Last set from Lua
+n  <Space>n    * <Cmd> set nu! <CR>
+                 Toggle line number
+	Last set from Lua
+n  <Space>tf   * <Lua 127: ~/.config/nvim/lua/custom/mappings.lua:16>
+                 Run file test
+	Last set from Lua
+n  <Space>tt   * <Lua 130: ~/.config/nvim/lua/custom/mappings.lua:10>
+                 Run nearest test
+	Last set from Lua
+n  <Space>to   * :Neotest output<CR>
+                 Test output
+	Last set from Lua
+n  <Space>ts   * :Neotest summary<CR>
+                 Test summary
+	Last set from Lua
+n  <Space>du   * <Lua 126: ~/.config/nvim/lua/custom/mappings.lua:31>
+                 Dedug UI
+	Last set from Lua
+n  <Space>db   * <Lua 124: ~/.config/nvim/lua/custom/mappings.lua:37>
+                 Breakpoint
+	Last set from Lua
+n  <Space>fm   * <Lua 129: ~/.config/nvim/lua/core/mappings.lua:50>
+                 LSP formatting
+	Last set from Lua
+n  <Space>dn   * <Lua 125: ~/.config/nvim/lua/custom/mappings.lua:49>
+                 Step over
+	Last set from Lua
+n  <Space>ch   * <Cmd> NvCheatsheet <CR>
+                 Mapping cheatsheet
+	Last set from Lua
+n  <Space>ds   * <Lua 3: ~/.config/nvim/lua/custom/mappings.lua:43>
+                 Start
+	Last set from Lua
+n  <Space>b    * <Cmd> enew <CR>
+                 New buffer
+	Last set from Lua
+n  <Space>     * <Lua 22: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:107>
+	Last set from Lua
+n  "           * <Lua 27: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:107>
+	Last set from Lua
+x  #           * y?\V<C-R>"<CR>
+                 Nvim builtin
+	Last set from Lua
+n  &           * :&&<CR>
+                 Nvim builtin
+	Last set from Lua
+n  '           * <Lua 23: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:107>
+	Last set from Lua
+x  *           * y/\V<C-R>"<CR>
+                 Nvim builtin
+	Last set from Lua
+n  ;           * :
+                 enter command mode
+	Last set from Lua
+v  <           * <gv
+                 Indent line
+	Last set from Lua
+v  >           * >gv
+                 indent
+	Last set from Lua
+n  Y           * y$
+                 Nvim builtin
+	Last set from Lua
+n  \           * <Cmd>:vsplit <CR>
+                 Vertical split
+	Last set from Lua
+n  `           * <Lua 32: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:107>
+	Last set from Lua
+n  c           * <Lua 30: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:107>
+	Last set from Lua
+o  gc          * <Lua 67: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:107>
+                 Comment toggle linewise
+	Last set from Lua
+n  gc          * <Lua 66: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:107>
+                 Comment toggle linewise
+	Last set from Lua
+o  gb          * <Lua 65: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:107>
+                 Comment toggle blockwise
+	Last set from Lua
+n  gcc         * <Lua 64: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:107>
+                 Comment toggle current line
+	Last set from Lua
+n  gb          * <Lua 63: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:107>
+                 Comment toggle blockwise
+	Last set from Lua
+x  gb          * <Lua 62: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:107>
+                 Comment toggle blockwise (visual)
+	Last set from Lua
+n  gbc         * <Lua 40: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:107>
+                 Comment toggle current block
+	Last set from Lua
+x  gc          * <Lua 35: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:107>
+                 Comment toggle linewise (visual)
+	Last set from Lua
+n  g           * <Lua 31: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:107>
+	Last set from Lua
+n  j           * v:count || mode(1)[0:1] == "no" ? "j" : "gj"
+                 Move down
+	Last set from Lua
+x  j           * v:count || mode(1)[0:1] == "no" ? "j" : "gj"
+                 Move down
+	Last set from Lua
+n  k           * v:count || mode(1)[0:1] == "no" ? "k" : "gk"
+                 Move up
+	Last set from Lua
+x  k           * v:count || mode(1)[0:1] == "no" ? "k" : "gk"
+                 Move up
+	Last set from Lua
+x  p           * p:let @+=@0<CR>:let @"=@0<CR>
+                 Dont copy replaced text
+	Last set from Lua
+n  v           * <Lua 33: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:107>
+	Last set from Lua
+n  <Plug>PlenaryTestFile * :lua require('plenary.test_harness').test_file(vim.fn.expand("%:p"))<CR>
+	Last set from ~/.local/share/nvim/lazy/plenary.nvim/plugin/plenary.vim line 9
+n  <S-Tab>     * <Lua 135: ~/.config/nvim/lua/core/mappings.lua:90>
+                 Goto prev buffer
+	Last set from Lua
+n  <C-N>       * <Cmd> NvimTreeToggle <CR>
+                 Toggle nvimtree
+	Last set from Lua
+n  <M-i>       * <Lua 134: ~/.config/nvim/lua/core/mappings.lua:325>
+                 Toggle floating term
+	Last set from Lua
+n  <M-v>       * <Lua 132: ~/.config/nvim/lua/core/mappings.lua:339>
+                 Toggle vertical term
+	Last set from Lua
+n  <M-h>       * <Lua 131: ~/.config/nvim/lua/core/mappings.lua:332>
+                 Toggle horizontal term
+	Last set from Lua
+n  <C-K>       * <C-W>k
+                 Window up
+	Last set from Lua
+n  <C-H>       * <C-W>h
+                 Window left
+	Last set from Lua
+n  <C-J>       * <C-W>j
+                 Window down
+	Last set from Lua
+n  <Down>      * v:count || mode(1)[0:1] == "no" ? "j" : "gj"
+                 Move down
+	Last set from Lua
+n  <Up>        * v:count || mode(1)[0:1] == "no" ? "k" : "gk"
+                 Move up
+	Last set from Lua
+n  <C-C>       * <Cmd> %y+ <CR>
+                 Copy whole file
+	Last set from Lua
+n  <C-S>       * <Cmd> w <CR>
+                 Save file
+	Last set from Lua
+v  <Up>        * v:count || mode(1)[0:1] == "no" ? "k" : "gk"
+                 Move up
+	Last set from Lua
+v  <Down>      * v:count || mode(1)[0:1] == "no" ? "j" : "gj"
+                 Move down
+	Last set from Lua
+n  <C-R>       * <Lua 29: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:107>
+	Last set from Lua
+n  <C-W>       * <Lua 28: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua:107>
+	Last set from Lua
+n  <C-L>       * <C-W>l
+                 Window right
+	Last set from Lua
