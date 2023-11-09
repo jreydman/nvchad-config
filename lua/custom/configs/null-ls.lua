@@ -1,15 +1,21 @@
-local null_ls = require "null-ls"
+local present, null_ls = pcall(require, "null-ls")
+
+if not present then
+  return
+end
 
 local formatting = null_ls.builtins.formatting
 local lint = null_ls.builtins.diagnostics
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
+local src = {
+  lint.golangci_lint,
+  formatting.stylua,
+}
+
 local opts = {
-  sources = {
-    lint.golangci_lint,
-    formatting.stylua,
-  },
+  sources = src,
   on_attach = function(client, bufnr)
     if client.supports_method "textDocument/formatting" then
       vim.api.nvim_clear_autocmds {
@@ -26,4 +32,7 @@ local opts = {
     end
   end,
 }
+
+null_ls.setup(opts)
+
 return opts

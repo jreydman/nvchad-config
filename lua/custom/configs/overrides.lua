@@ -28,12 +28,12 @@ M.mason = {
     "typescript-language-server",
     "deno",
     "prettier",
-    "eslint_d",
+    "eslint_d", --linter
+    "eslint-lsp", --LSP
     "clangd",
     "clang-format",
-    "node-debug2-adapter",
+    "node-debug2-adapter", -- /js-debug-adapter/ -- DAP
     "gopls",
-    "gradle_ls",
   },
 }
 
