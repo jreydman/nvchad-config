@@ -30,7 +30,7 @@ passhrise auth
  * requirements:
     * [gpg util](https://gnupg.org)
     * [pass util](https://www.passwordstore.org)
-    * [ripgrep](#ripgrep)
+    * [ripgrep](# Recomended requirements)
 ```bash
 # for initial
 gpg --full-generate-key
