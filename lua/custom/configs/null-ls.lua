@@ -1,16 +1,11 @@
 local null_ls = require "null-ls"
 
-local b = null_ls.builtins
-
 local formatting = null_ls.builtins.formatting
 
 local lint = null_ls.builtins.diagnostics
 
 local sources = {
-  -- webdev stuff
-  formatting.deno_fmt, -- choosed deno for ts/js files cuz its very fast!
-  formatting.golangci_lint,
-  -- Lua
+  lint.golangci_lint,
   formatting.stylua,
 }
 

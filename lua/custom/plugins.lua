@@ -47,10 +47,12 @@ local plugins = {
     end,
   },
   {
-    "jackMort/ChatGPT.nvim",
+    "dreamsofcode-io/ChatGPT.nvim",
     event = "VeryLazy",
     config = function()
-      require("chatgpt").setup {}
+      require("chatgpt").setup {
+        api_key_cmd = "echo $OPENAI_API_KEY",
+      }
     end,
     dependencies = {
       "MunifTanjim/nui.nvim",
