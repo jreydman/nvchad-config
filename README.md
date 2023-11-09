@@ -1,25 +1,25 @@
-#recomended requirements
+# Recomended requirements
  * [ripgrep](https://github.com/BurntSushi/ripgrep) => alias grep=rg
  * [exa](https://github.com/ogham/exa) => alias ls=exa
  * [tldr](https://github.com/tldr-pages/tldr) => alias man=tldr
  * [bat](https://github.com/sharkdp/bat) => alias cat=bat
-### uninstalling nvchad
+### Uninstalling nvchad
 ```bash
 rm -rf ~/.config/nvim
 rm -rf ~/.local/share/nvim
 ```
 
-### installing nvchad
+### Installing nvchad
 ```bash
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 ```
 
-# nvchad-config
+# Nvchad-config
 ```bash
 rm -rf ~/.config/nvim/lua/custom && git clone https://github.com/jreydman/nvchad-config.git ~/.config/nvim/lua/custom
 ```
 
-### update dependencies
+### Update dependencies
 > :TSUpdate
 
 ### GPT support
