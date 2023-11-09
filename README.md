@@ -43,13 +43,17 @@
 
 initialize
 ```bash
+# create new gpg pairs kit
 gpg --full-generate-key
 
+# for checking sum
 gpg --list-secret-keys --keyid-format=long
 
+# create new password sync storage
 pass init $(gpg --list-secret-keys --keyid-format=long | rg -o -e 'uid\s+[^\n]+' | rg -o -e '<([^>]+)>' --replace '$1')
 
-echo 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 | pass insert --echo --force test/t/token
+#
+echo <openai-api-key> | pass insert --echo --force test/t/token
 ```
 
 ---
