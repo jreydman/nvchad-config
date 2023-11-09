@@ -34,6 +34,9 @@
     > :MasonUpdate
     > :TSUpdate
 
+### Codeium
+> :Codeium Auth
+
 ### GPT support
 #### ~~environment sync~~
 > export OPENAI_API_TYPE=_TOKEN_
@@ -50,4 +53,15 @@ Export mapping
 :redir > key_mappings.txt
 :map
 :redir END
+```
+
+Toogle plugins
+```lua
+-- custom/plugins.lua
+{ "__current-plugin", enabled = false, -- true }
+```
+
+Manage plugins
+```lua
+-- custom/configs/overrides.lua
 ```

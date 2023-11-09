@@ -13,6 +13,7 @@ gpg --full-generate-key
 
 # for checking sum
 gpg --list-secret-keys --keyid-format=long
+gpg --fingerprint
 
 # create new password sync storage
 pass init $(gpg --list-secret-keys --keyid-format=long | rg -o -e 'uid\s+[^\n]+' | rg -o -e '<([^>]+)>' --replace '$1')
