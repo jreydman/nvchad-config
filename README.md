@@ -1,5 +1,6 @@
 # nvchad-config
 ```bash
+rm -rf ~/.config/nvim/*
 git clone https://github.com/jreydman/nvchad-config.git ~/.config/nvim
 
 ```
