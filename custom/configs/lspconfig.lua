@@ -19,24 +19,25 @@ local function organize_imports()
   vim.lsp.buf.execute_command(params)
 end
 
+-- for all lsp servers
 for _, lsp in ipairs(servers) do
-  lspconfig[lsp].setup {
+  local server_config = {
     on_attach = on_attach,
     capabilities = capabilities,
-    commands = {
-      OrganizeImports = {
-        organize_imports,
-        description = "Organize Imports",
-      },
-    },
     init_options = {
       preferences = {
         disableSuggestions = true,
       },
     },
   }
-  lspconfig.prismals.setup {}
-end
 
---
--- lspconfig.pyright.setup { blabla}
+  -- Add the command only for tsserver
+  if lsp == "tsserver" then
+    server_config.commands = {
+      OrganizeImports = organize_imports,
+      description = "Organize Imports",
+    }
+  end
+
+  lspconfig[lsp].setup(server_config)
+end

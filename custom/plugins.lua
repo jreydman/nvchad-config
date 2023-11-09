@@ -47,11 +47,12 @@ local plugins = {
     end,
   },
   {
-    "jackMort/ChatGPT.nvim",
+    "dreamsofcode-io/ChatGPT.nvim",
+    enabled = false,
     event = "VeryLazy",
     config = function()
       require("chatgpt").setup {
-        api_key_cmd = "echo $OPENAI_API_KEY",
+        async_api_key_cmd = "pass show api/tokens/openai",
       }
     end,
     dependencies = {

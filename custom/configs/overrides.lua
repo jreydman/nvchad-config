@@ -34,6 +34,7 @@ M.mason = {
     "clang-format",
     "node-debug2-adapter", -- /js-debug-adapter/ -- DAP
     "gopls",
+    -- "luacheck",
   },
 }
 
