@@ -1,10 +1,14 @@
 # Nvchad-config
 
+### [***Over package requirement list***](docs/packages-requirement.md)
+
 ### Recomended requirements
  * [ripgrep](https://github.com/BurntSushi/ripgrep) => alias grep=rg
  * [exa](https://github.com/ogham/exa) => alias ls=exa
  * [tldr](https://github.com/tldr-pages/tldr) => alias man=tldr
  * [bat](https://github.com/sharkdp/bat) => alias cat=bat
+
+---
 
 ## Installation steps
 
