@@ -1,21 +1,16 @@
-require "core"
+vim.g.dap_virtual_text = true
+vim.opt.colorcolumn = "80"
 
-local custom_init_path = vim.api.nvim_get_runtime_file("lua/custom/init.lua", false)[1]
+-- Disable persistent undo for files in /private directory
+vim.api.nvim_create_autocmd("BufReadPre", { pattern = "/private/*", command = "set noundofile" })
 
-if custom_init_path then
-  dofile(custom_init_path)
-end
+-- Enable persistent undo for other files
+vim.opt.undofile = true
 
-require("core.utils").load_mappings()
+-- local autocmd = vim.api.nvim_create_autocmd
 
-local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
-
--- bootstrap lazy.nvim!
-if not vim.loop.fs_stat(lazypath) then
-  require("core.bootstrap").gen_chadrc_template()
-  require("core.bootstrap").lazy(lazypath)
-end
-
-dofile(vim.g.base46_cache .. "defaults")
-vim.opt.rtp:prepend(lazypath)
-require "plugins"
+-- Auto resize panes when resizing nvim window
+-- autocmd("VimResized", {
+--   pattern = "*",
+--   command = "tabdo wincmd =",
+-- })
