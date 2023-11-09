@@ -4,3 +4,4 @@ ftplugin
 syntax
 after
 **/.DS_Store
+.nvimrc
