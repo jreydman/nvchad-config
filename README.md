@@ -1,43 +1,62 @@
-# Recomended requirements
+# Nvchad-config
+
+### Recomended requirements
  * [ripgrep](https://github.com/BurntSushi/ripgrep) => alias grep=rg
  * [exa](https://github.com/ogham/exa) => alias ls=exa
  * [tldr](https://github.com/tldr-pages/tldr) => alias man=tldr
  * [bat](https://github.com/sharkdp/bat) => alias cat=bat
-### Uninstalling nvchad
-```bash
-rm -rf ~/.config/nvim
-rm -rf ~/.local/share/nvim
-```
 
-### Installing nvchad
-```bash
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
-```
+## Installation steps
 
-# Nvchad-config
-```bash
-rm -rf ~/.config/nvim/lua/custom && git clone https://github.com/jreydman/nvchad-config.git ~/.config/nvim/lua/custom
-```
+### Nvchad app
+* Uninstalling
+    ```bash
+    rm -rf ~/.config/nvim
+    rm -rf ~/.local/share/nvim
+    ```
 
-### Update dependencies
-> :TSUpdate
+* Installing
+    ```bash
+    git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+    ```
+
+### Custom config
+* Installation
+    ```bash
+    rm -rf ~/.config/nvim/lua/custom
+    git clone https://github.com/jreydman/nvchad-config.git ~/.config/nvim/lua/custom
+    ```
+* Update dependencies
+    > :MasonUpdate
+    > :TSUpdate
 
 ### GPT support
-environment
-> export OPENAI_API_TYPE=_TOKEN_ //deprecated
+#### environment
+! DEPRECATED
+> export OPENAI_API_TYPE=_TOKEN_
 
-passhrise auth
+#### passhrise auth
  * requirements:
     * [gpg util](https://gnupg.org)
     * [pass util](https://www.passwordstore.org)
     * [ripgrep](#recomended-requirements)
+
+initialize
 ```bash
-# for initial
 gpg --full-generate-key
+
 gpg --list-secret-keys --keyid-format=long
+
 pass init $(gpg --list-secret-keys --keyid-format=long | rg -o -e 'uid\s+[^\n]+' | rg -o -e '<([^>]+)>' --replace '$1')
+
+echo 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 | pass insert --echo --force test/t/token
 ```
-### Export mapping
+
+---
+
+### Additional meta
+
+Export mapping
 ```vim
 :redir > key_mappings.txt
 :map
