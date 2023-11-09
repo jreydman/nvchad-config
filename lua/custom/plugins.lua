@@ -161,14 +161,6 @@ local plugins = {
     "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
   },
-  {
-    "folke/todo-comments.nvim",
-    dependencies = { "nvim-lua/plenary.nvim" },
-    lazy = false,
-    config = function()
-      require("todo-comments").setup()
-    end,
-  },
 
   -- To make a plugin not be loaded
   -- {

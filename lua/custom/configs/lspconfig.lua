@@ -1,9 +1,8 @@
-local on_attach = require("plugins.configs.lspconfig").on_attach
-local capabilities = require("plugins.configs.lspconfig").capabilities
-
+local config = require "plugins.configs.lspconfig"
 local lspconfig = require "lspconfig"
 
--- if you just want default config for the servers then put them in a table
+local on_attach = config.on_attach
+local capabilities = config.capabilities
 
 local servers = { "html", "cssls", "tsserver", "clangd", "gopls", "gradle_ls" }
 
@@ -23,6 +22,11 @@ for _, lsp in ipairs(servers) do
       OrganizeImports = {
         organize_imports,
         description = "Organize Imports",
+      },
+    },
+    init_options = {
+      preferences = {
+        disableSuggestions = true,
       },
     },
   }
