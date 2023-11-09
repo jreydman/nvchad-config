@@ -52,8 +52,8 @@ gpg --list-secret-keys --keyid-format=long
 # create new password sync storage
 pass init $(gpg --list-secret-keys --keyid-format=long | rg -o -e 'uid\s+[^\n]+' | rg -o -e '<([^>]+)>' --replace '$1')
 
-#
-echo <openai-api-key> | pass insert --echo --force test/t/token
+# save generated GPT token in storage
+echo <openai-api-key> | pass insert --echo --force api/tokens/openai
 ```
 
 ---
